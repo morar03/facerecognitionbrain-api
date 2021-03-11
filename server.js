@@ -31,7 +31,7 @@ app.get('/', (req, res)=>{
 })
 
 /*	/signin --> POST  = sicces/fail	*/
-app.post('/signin', (req, res) => {sigin.handleSignIn(req, res, db, bcrypt)})
+app.post('/signin', (req, res) => {signin.handleSignIn(req, res, db, bcrypt)})
 
 /*  /register --> POST = user */
 app.post('/register', (req,res) => {register.handleRegister(req, res, db, bcrypt)})
